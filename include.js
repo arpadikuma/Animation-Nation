@@ -6526,6 +6526,13 @@ let cards = [
     author: 'Marion',
     githubLink: 'https://github.com/marionjudy13'
   },
+  {
+    artName: 'funkyloaderthing',
+    pageLink: './Art/arpadikuma/index.html',
+    imageLink: './Art/arpadikuma/funkyloaderthing.gif',
+    author: 'arpadikuma',
+    githubLink: 'https://github.com/arpadikuma'
+  }
 ];
 
 // +--------------------------------------------------------------------------------+

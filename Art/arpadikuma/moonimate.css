@@ -1,0 +1,71 @@
+div#outer {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 15px solid thistle;
+    margin: 0 auto;
+    margin-top: 25%;
+    border-radius: 50%;
+    position: relative;
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+div#inner {
+    width: 65px;
+    height: 65px;
+    border: 5px solid royalblue;
+    position: absolute;
+    animation-name: square;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes circle {
+    0% {
+        border-color: tomato; transform: scale(1);
+    }
+    20% {
+        border-color: goldenrod; transform: scale(1.1);
+    }
+    40% {
+        border-color: powderblue; transform: scale(1);
+    }
+    60% {
+        border-color: lightskyblue; transform: scale(1.2);
+    }
+    80% {
+        border-color: lightsalmon; transform: scale(0.9);
+    }
+    100% {
+        border-color: tomato; transform: scale(1);
+    }
+}
+
+@keyframes square {
+    0% {
+        border-color: darkgoldenrod; transform: rotate(0deg); border-width: 10px;
+    }
+    20% {
+        border-color: orange; border-width: 20px;
+    }
+    40% {
+        border-color: aquamarine; border-width: 10px;
+    }
+    60% {
+        border-color: lightgreen; border-width: 30px;
+    }
+    80% {
+        border-color: lightseagreen; border-width: 5px;
+    }
+    100% {
+        border-color: darkgoldenrod; transform: rotate(360deg); border-width: 10px;
+    }
+    
+}
